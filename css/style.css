@@ -1,0 +1,100 @@
+/* font style imported from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+
+body {
+  background: #ddeebb;
+  color:rgba(200,100,400,1);/*changes the color of text*/
+  font-family:'Shadows Into Light',sans-serif;
+  font-weight:300 !important;
+  text-shadow: 2px 3px 3px #000;
+  margin-top: 10px;
+}
+
+#site-title
+{
+  font-family:'Benne',sans-serif;
+}
+
+body h1{
+  font-weight: 500;
+}
+
+h3
+{
+  color:#0ff;
+  border: 2px dotted powderblue;
+  padding: 20px;
+}
+
+body h4
+{
+  color:#000;
+  background-color: pink;
+}
+
+/*Element specifity*/
+body> header >h3{
+  background: #fff;
+}
+
+/*applying hover over elements*/
+#Contact-form:hover{
+  font-size:20px;
+  color:#8f8;
+}
+
+/*using id for the modification*/
+#main-header{
+  border-bottom: 2px solid #000;
+  position:relative;
+  width:100%;
+  background: rgba(200,225,255,.9);
+  top:0px;
+}
+
+#main-header::before{
+  content: "";
+  display: block;
+  width:10px;
+  height:74px;
+  background:purple;
+  position:absolute;
+  bottom:18px;
+}
+
+.my-input{
+  display:block;
+  width:50%;
+  margin:10px;
+  padding:10px 20px;
+  border-radius:10px;
+  border:1px solid transparent;
+}
+
+.my-input:focus{
+  background:#d5ffc2;
+  color:#0f8034;
+  outline: none;
+  border:1px solid #000;
+}
+
+p{
+  letter-spacing: 4px;
+  word-spacing:2px;
+}
+
+.my_text{
+  max-height: 200px;
+  overflow: scroll;
+  border:3px solid purple;
+  margin-top: 10px;
+}
+
+section{
+  border-bottom: 1px dashed #000;
+}
+
+form{
+  text-decoration:underline;
+}

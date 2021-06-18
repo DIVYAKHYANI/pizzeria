@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Pizzeria-Pizza's for you!</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="This page is a pizza ordering site">
+    <meta name="keywords" content="html5,udemy, learn code">
+    <meta name="author" content="Divya Khyani">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header id="main-header">
+      <h1 id="site-title">Welcome to Pizzeria!</h1>
+      <h3>We hope you fall in love with our pizza over and over again :)</h3>
+    </header>
+
+    <input placeholder="Search..." class="my-input"/>
+    <main>
+       <section id="Contact-form">
+         <h2>Place-your-yumm-order</h2>
+
+         <form method="GET" action="place-order.php">
+
+           <h4>Delivery Options we offer:</h4>
+
+           <input name="delivery Method" type="radio" value="delivery"/>Delivery<br />
+           <input name="delivery Method" type="radio" value="take-away"/>Take-away<br />
+           <input name="delivery Method" type="radio" value="dine-in"/>Dine-in<br />
+
+           <h4>Enter your details here:</h4>
+
+           <input name="name" placeholder="Full Name" class="lg-input" /><br />
+           <input name="address1" placeholder="Address Line 1" class="lg-input" /><br />
+           <input name="address2" placeholder="Address Line 2" class="lg-input" /><br />
+           <input name="city" placeholder="City" class="sm-input" />
+           <input nmae="state" placeholder="State" class="sm-input" /><br />
+           <input name="zip" placeholder="Zip Code" class="sm-input"/>
+           <br/>
+           <br/>
+
+           <h4>What size would you prefer?</h4>
+
+           <select name="size">
+             <option value="12">12" - $13.99</option>
+             <option value="16">16" - $16.99</option>
+             <option value="18">18" - $19.99</option>
+             <option value="72">72" - $149.99</option>
+           </select>
+         </section>
+
+         <section>
+             <p> Here is a quick receipe, just for you:</p>
+
+             <video width="540" height="320" controls>
+             <source src="./video.mp4" type="video/mp4">
+             <source src="./video.ogg" type="video/ogg">
+               Your browser does not support HTML5
+             </video><br/>
+
+            <p>Turn on Some soothing music,while you choose the toppings :)</p>
+
+            <audio id="my_sound" width="600" controls autoplay loop>
+            <source src="./bensound-hey.mp3" type="audio/mp3">
+            </audio>
+          </section>
+
+          <div class="my_text">
+          <h4>Ingredients you love</h4>
+
+           <input name="ingredient" type="checkbox" value="pepperoni"/>Pepperoni<br />
+           <input name="ingredient" type="checkbox" value="salami"/>Salami<br />
+           <input name="ingredient" type="checkbox" value="bell pepper"/>Bell Pepper<br />
+           <input name="ingredient" type="checkbox" value="sausage"/>Italian Sausage<br />
+           <input name="ingredient" type="checkbox" value="onions"/>Onions<br />
+           <input name="ingredient" type="checkbox" value="tomatoes"/>Tomatoes<br />
+           <input name="ingredient" type="checkbox" value="mushrooms"/>Mushrooms<br />
+           <input name="ingredient" type="checkbox" value="cheese"/>Cheese<br />
+           <input name="ingredient" type="checkbox" value="paneer"/>Paneer<br />
+           <input name="ingredient" type="checkbox" value="olives"/>Olives<br />
+           <input name="ingredient" type="checkbox" value="corn"/>Corn<br /><br />
+           </div>
+
+           <button type="submit">Place Order</button>
+         </form>
+
+       </section>
+
+       <footer>
+         <center>&copy; 2021<br />
+         <a href="#">Terms of Service</a></center>
+       </footer>
+
+    </main>
+  </body>
+</html>
